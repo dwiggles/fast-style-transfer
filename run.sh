@@ -16,6 +16,22 @@ apt-install || exit 1
 mkdir data
 mkdir data/bin
 
+# train a style in 2 steps
+# step 1: setup for training (copied from setup.sh)
+mkdir data
+cd data
+wget http://www.vlfeat.org/matconvnet/models/beta16/imagenet-vgg-verydeep-19.mat
+mkdir bin
+wget http://msvocds.blob.core.windows.net/coco2014/train2014.zip
+unzip train2014.zip
+
+# step2 2: train
+python style.py --style examples/style/wave.jpg \
+  --checkpoint-dir ./wave.ckpt \
+  --content-weight 1.5e1 \
+  --checkpoint-iterations 1000 \
+  --batch-size 20
+
 #run style transfer on video
 # python transform_video.py --in-path examples/content/fox.mp4 \
 #  --checkpoint ./scream.ckpt \
@@ -24,6 +40,6 @@ mkdir data/bin
 #  --batch-size 4 2>&1
 
 #run style transfer on a single image -- adapted from the example in the README.md file 2018.09.29
-python evaluate.py --checkpoint ./scream.ckpt \
-  --in-path examples/content/WhatsApp\ Image\ 2018-05-10\ at\ 3.34.49\ PM.jpeg \
-  --out-path /artifacts/new.jpg
+# python evaluate.py --checkpoint ./scream.ckpt \
+# --in-path examples/content/WhatsApp\ Image\ 2018-05-10\ at\ 3.34.49\ PM.jpeg \
+# --out-path /artifacts/new.jpg
