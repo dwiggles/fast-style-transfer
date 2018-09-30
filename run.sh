@@ -21,10 +21,10 @@ mkdir data/bin
 mkdir data
 cd data
 pwd
-wget http://www.vlfeat.org/matconvnet/models/beta16/imagenet-vgg-verydeep-19.mat
+/usr/bin/wget http://www.vlfeat.org/matconvnet/models/beta16/imagenet-vgg-verydeep-19.mat
 mkdir bin
-wget http://msvocds.blob.core.windows.net/coco2014/train2014.zip
-unzip train2014.zip
+/usr/bin/wget http://msvocds.blob.core.windows.net/coco2014/train2014.zip
+/usr/bin/unzip train2014.zip
 cd ..
 pwd
 
