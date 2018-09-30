@@ -20,10 +20,13 @@ mkdir data/bin
 # step 1: setup for training (copied from setup.sh)
 mkdir data
 cd data
+pwd
 wget http://www.vlfeat.org/matconvnet/models/beta16/imagenet-vgg-verydeep-19.mat
 mkdir bin
 wget http://msvocds.blob.core.windows.net/coco2014/train2014.zip
 unzip train2014.zip
+cd ..
+pwd
 
 # step2 2: train
 python style.py --style examples/style/wave.jpg \
