@@ -25,5 +25,5 @@ mkdir data/bin
 
 #run style transfer on a single image -- adapted from the example in the README.md file 2018.09.29
 python evaluate.py --checkpoint ./scream.ckpt \
-  --in-path examples/WhatsApp\ Image\ 2018-05-10\ at\ 3.34.49\ PM.jpeg \
+  --in-path examples/content/WhatsApp\ Image\ 2018-05-10\ at\ 3.34.49\ PM.jpeg \
   --out-path /artifacts/new.jpg
