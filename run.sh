@@ -30,7 +30,7 @@ pwd
 
 # step2 2: train
 python style.py --style examples/style/wave.jpg \
-  --checkpoint-dir ./wave.ckpt \
+  --checkpoint-dir ./ \
   --content-weight 1.5e1 \
   --checkpoint-iterations 1000 \
   --batch-size 20
