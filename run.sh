@@ -20,15 +20,15 @@ mkdir data/bin
 # step 1: setup for training (copied from setup.sh)
 mkdir data
 cd data
-pwd
-echo Next: which wget
-which wget
-echo Next: which unzip
-which unzip
-/usr/bin/wget http://www.vlfeat.org/matconvnet/models/beta16/imagenet-vgg-verydeep-19.mat
-mkdir bin
-/usr/bin/wget http://msvocds.blob.core.windows.net/coco2014/train2014.zip
-/usr/bin/unzip train2014.zip
+ln -s /storage/public_datasets/coco/coco_train2014/* .
+# pwd
+# echo Next: which wget
+# which wget
+# echo Next: which unzip
+# which unzip
+# /usr/bin/wget http://www.vlfeat.org/matconvnet/models/beta16/imagenet-vgg-verydeep-19.mat
+# /usr/bin/wget http://msvocds.blob.core.windows.net/coco2014/train2014.zip
+# /usr/bin/unzip train2014.zip
 cd ..
 pwd
 
