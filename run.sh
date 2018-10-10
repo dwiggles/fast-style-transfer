@@ -13,14 +13,14 @@ add-apt-repository -y ppa:jonathonf/ffmpeg-3 2>&1
 apt-install || exit 1
 
 #create folders
-mkdir data
-mkdir data/bin
+# mkdir data
+# mkdir data/bin
 
 # train a style in 2 steps
 # step 1: setup for training (copied from setup.sh)
-mkdir data
-cd data
-ln -s /storage/public_datasets/coco/coco_train2014/* .
+# mkdir data
+# cd data
+# ln -s /storage/public_datasets/coco/coco_train2014/* .
 # pwd
 # echo Next: which wget
 # which wget
@@ -29,7 +29,7 @@ ln -s /storage/public_datasets/coco/coco_train2014/* .
 # /usr/bin/wget http://www.vlfeat.org/matconvnet/models/beta16/imagenet-vgg-verydeep-19.mat
 # /usr/bin/wget http://msvocds.blob.core.windows.net/coco2014/train2014.zip
 # /usr/bin/unzip train2014.zip
-cd ..
+# cd ..
 pwd
 
 # step2 2: train
