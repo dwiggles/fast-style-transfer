@@ -38,8 +38,8 @@ python style.py --style examples/style/wave.jpg \
   --content-weight 1.5e1 \
   --checkpoint-iterations 1000 \
   --batch-size 20 \
-  --train-path '/storage/data/train2014' \
-  --vgg-path '/storage/data'
+  --train-path '/storage/fast-style-transfer/data/train2014' \
+  --vgg-path '/storage/fast-style-transfer/data'
 
 #run style transfer on video
 # python transform_video.py --in-path examples/content/fox.mp4 \
