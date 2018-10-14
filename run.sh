@@ -38,7 +38,7 @@ python style.py --style examples/style/wave.jpg \
   --content-weight 1.5e1 \
   --checkpoint-iterations 1000 \
   --batch-size 20 \
-  --train-path / \
+  --train-path /storage \
   --vgg-path /storage/fast-style-transfer/data/imagenet-vgg-verydeep-19.mat
 
 #  --train-path /storage/public_datasets/coco/coco_train2014 \
