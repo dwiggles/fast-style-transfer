@@ -33,7 +33,7 @@ apt-install || exit 1
 pwd
 
 # step2 2: train
-python style.py --style examples/style/wave.jpg \
+sudo python style.py --style examples/style/wave.jpg \
   --checkpoint-dir ./ \
   --content-weight 1.5e1 \
   --checkpoint-iterations 1000 \
